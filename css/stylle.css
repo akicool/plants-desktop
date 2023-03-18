@@ -150,7 +150,6 @@
 .article__logo {
   width: 464px;
   height: 479px;
-  overflow: hidden;
 }
 
 .figure {
@@ -203,21 +202,20 @@
   color: #E06733;
 }
 .figure .figure__photo-container {
-  height: 995px;
-  padding-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 970px;
+  margin-top: 90px;
   padding-bottom: 121px;
 }
-.figure .figure__photo-container .figure__photo-block-1 {
-  display: flex;
-  justify-content: space-between;
-  height: 450px;
-}
-.figure .figure__photo-container .figure__photo-block-1 .figure__photo-item-1 {
+.figure .figure__photo-container .figure__photo-item-1 {
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   overflow: hidden;
 }
-.figure .figure__photo-container .figure__photo-block-1 .figure__photo-item-1 .figure__photo-text-1 {
+.figure .figure__photo-container .figure__photo-item-1 .figure__photo-text-1 {
   color: #E06733;
   font-family: inter;
   width: 120px;
@@ -228,7 +226,7 @@
   padding-top: 10px;
   padding-left: 110px;
 }
-.figure .figure__photo-container .figure__photo-block-1 .figure__photo-item-1 .figure__photo-subtext-1 {
+.figure .figure__photo-container .figure__photo-item-1 .figure__photo-subtext-1 {
   font-weight: 400;
   font-family: inter;
   font-size: 16px;
@@ -236,19 +234,14 @@
   color: #717171;
   padding-left: 30px;
   padding-top: 10px;
+  margin-bottom: 36px;
 }
-.figure .figure__photo-container .figure__photo-block-2 {
-  display: flex;
-  justify-content: space-between;
-  height: 450px;
-  margin-top: 55px;
-}
-.figure .figure__photo-container .figure__photo-block-2 .figure__photo-item-2 {
+.figure .figure__photo-container .figure__photo-item-2 {
   border: 1px solid #E3E1D5;
   border-radius: 20px;
   overflow: hidden;
 }
-.figure .figure__photo-container .figure__photo-block-2 .figure__photo-item-2 .figure__photo-text-2 {
+.figure .figure__photo-container .figure__photo-item-2 .figure__photo-text-2 {
   color: #E06733;
   font-family: inter;
   width: 120px;
@@ -259,7 +252,7 @@
   padding-top: 10px;
   padding-left: 110px;
 }
-.figure .figure__photo-container .figure__photo-block-2 .figure__photo-item-2 .figure__photo-subtext-2 {
+.figure .figure__photo-container .figure__photo-item-2 .figure__photo-subtext-2 {
   font-weight: 400;
   font-family: inter;
   font-size: 16px;
@@ -267,6 +260,7 @@
   color: #717171;
   padding-left: 30px;
   padding-top: 10px;
+  margin-bottom: 36px;
 }
 .figure .figure__photo-container .figure__photo-rect {
   height: 350px;

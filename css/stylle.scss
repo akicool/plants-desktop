@@ -71,7 +71,7 @@ $white-color: #FFFFFF;
 
 .section__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     height: 407px;
     width: 1220px;
     padding-top: 62px;
@@ -81,8 +81,8 @@ $white-color: #FFFFFF;
 
 .section__block-logo {
 
-}
-.section__block-welcome {
+}.section__block-welcome
+ {
     width: 549px;
     height: 340px;
     padding-top: 36px;
@@ -169,8 +169,7 @@ $white-color: #FFFFFF;
 
 .article__logo {
     width: 464px;
-    height: 479px;
-    overflow: hidden; 
+    height: 479px;   
 }
 
 // figure setting
@@ -233,14 +232,13 @@ $white-color: #FFFFFF;
     }
     
     .figure__photo-container {
-        height: 995px;
-        padding-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 970px;
+        margin-top: 90px;
         padding-bottom: 121px;
-        
-        .figure__photo-block-1 {
-            display: flex;
-            justify-content: space-between;
-            height: 450px;
             
             
             .figure__photo-item-1 {
@@ -269,17 +267,10 @@ $white-color: #FFFFFF;
                     line-height: 20px;
                     color: $gray-color;
                     padding-left: 30px;
-                    padding-top: 10px;                    
+                    padding-top: 10px;
+                    margin-bottom: 36px;                    
                 }
             }
-
-        }
-
-        .figure__photo-block-2 {
-            display: flex;
-            justify-content: space-between;
-            height: 450px;
-            margin-top: 55px;
 
             .figure__photo-item-2 {
                 // background: $gray-color;
@@ -308,9 +299,9 @@ $white-color: #FFFFFF;
                     color: $gray-color;
                     padding-left: 30px;
                     padding-top: 10px;
+                    margin-bottom: 36px;
                 }
             }
-        }
 
         .figure__photo-rect {
             height: 350px;
