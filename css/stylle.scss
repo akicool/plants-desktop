@@ -1,3 +1,16 @@
+body::-webkit-scrollbar {
+    width: 15px;               
+  }
+  body::-webkit-scrollbar-track {
+    background: #EDF2EC;        
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #EDF2EC;    
+    border-radius: 20px;
+    border: 3px solid #499A18;
+  }
+
+
 // colros
 
 $green-color: #499A18;
@@ -11,6 +24,7 @@ $white-color: #FFFFFF;
 
 .header {
     background: $background;
+    
 }
 
 .container {
@@ -99,7 +113,7 @@ $white-color: #FFFFFF;
 .section__subtext {
     font-weight: 400;
     font-size: 20px;
-    padding-top: 42px;
+    margin-top: 42px;
     color: $gray-color-subtext;
     line-height: 35px;
 }
@@ -143,7 +157,7 @@ $white-color: #FFFFFF;
     width: 605px;
     height: 350px;
     padding: 68px 0 61px 0;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .article__text {
